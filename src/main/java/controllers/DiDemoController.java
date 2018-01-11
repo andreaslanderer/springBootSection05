@@ -1,4 +1,4 @@
-package com.landerer.spring.didemo.controllers;
+package controllers;
 
 import org.springframework.stereotype.Controller;
 
