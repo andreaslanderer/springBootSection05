@@ -1,11 +1,14 @@
 package com.landerer.spring.didemo;
 
-import com.landerer.spring.didemo.controllers.*;
+import controllers.*;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.ApplicationContext;
+import org.springframework.context.annotation.ComponentScan;
 
+// If no @ComponentScan is provided Spring will scan this package and all subpackages
 @SpringBootApplication
+@ComponentScan(basePackages = {"services", "controllers"})
 public class MainApplication {
     public static void main(String[] args) {
         final ApplicationContext context = SpringApplication.run(MainApplication.class, args);
