@@ -9,7 +9,7 @@ import services.JokeService;
 
 // If no @ComponentScan is provided Spring will scan this package and all subpackages
 @SpringBootApplication
-@ComponentScan(basePackages = {"services", "controllers", "com.landerer.spring.didemo.config"})
+@ComponentScan(basePackages = {"services", "controllers", "repositories", "com.landerer.spring.didemo.config"})
 public class MainApplication {
     public static void main(String[] args) {
         final ApplicationContext context = SpringApplication.run(MainApplication.class, args);
